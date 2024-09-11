@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FLASH FLASH COMFORT</title>
+	<link rel="icon" type="image/gif" href="images/favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="overlay">
+	<div class="container" style="height: 560px;">
+		<h1 class="text-center error" ><a onclick="goBack();return false;">ERROR</a></h1>
+	</div>
+	<footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				var images = ['amputation.JPG', 'bitter-pill.JPG', 'cell.JPG', 'double-file.JPG', 'elliot-smith.JPG', 'fortress-of-sizzle-tooth.JPG', 
+			'fucking-rock-lasers.JPG', 'gary-pride.JPG', 'happiness-cannon.JPG', 'mnximum.JPG', 'output.txt', 'red-your-wrong.JPG', 'rhino-lovers-runners.JPG',
+			 'simbalism.JPG', 'space-ship-rainbow.JPG', 'starring-at-a-crucifix.JPG', 'stop-being-an-eyehole.JPG', 'the-navel.JPG', 'zombie-soldier-elvis.JPG'];
+
+			 $('body').css({'background-image': 'url(backgrounds/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
+			});
+
+			function goBack() {
+    			window.history.back();
+			}
+
+		 </script>
+	</footer>	
+	</div>
+	</body>	
+</html>
+
